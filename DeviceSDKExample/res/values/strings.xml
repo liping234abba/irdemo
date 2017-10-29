@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JdshDeviceSDK</string>
+    <string name="appid"></string>
+    
+    <string name="register">registerDevice</string>
+	<string name="getDeviceType">getDeviceType</string>
+	<string name="getBrandByType">getBrandByType</string>
+	<string name="getDataByBrand">getDataByBrand</string>
+	<string name="getDetailByRCID">getDetailByRCID</string>
+	<string name="getFastMatched">getFastMatched</string>
+</resources>
