@@ -22,6 +22,7 @@ import com.jdsh.sdk.ir.model.Brand;
 import com.jdsh.sdk.ir.model.BrandResult;
 import com.jdsh.sdk.ir.model.DeviceType;
 import com.jdsh.sdk.ir.model.DeviceTypeResult;
+import com.jdsh.sdk.ir.model.IRMessage;
 import com.jdsh.sdk.ir.model.MatchRemoteControl;
 import com.jdsh.sdk.ir.model.MatchRemoteControlResult;
 import com.jdsh.sdk.ir.model.RemoteControl;
@@ -191,6 +192,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
 				MatchRemoteControlResult rcFastMatched = irInterface.getFastMatched(1101, 7, "1,38000,167,167,20,61,20,20,20,61,20,61,20,20,20,20,20,61,20,20,20,20,20,61,20,20,20,20,20,61,20,61,20,20,20,61,20,61,20,20,20,61,20,61,20,61,20,61,20,61,20,61,20,20,20,61,20,20,20,20,20,20,20,20,20,20,20,20,20,61,20,61,20,20,20,61,20,20,20,20,20,20,20,20,20,20,20,20,20,61,20,20,20,61,20,61,20,61,20,61,20,198,167,167,20,61,20,20,20,61,20,61,20,20,20,20,20,61,20,20,20,20,20,61,20,20,20,20,20,61,20,61,20,20,20,61,20,61,20,20,20,61,20,61,20,61,20,61,20,61,20,61,20,20,20,61,20,20,20,20,20,20,20,20,20,20,20,20,20,61,20,61,20,20,20,61,20,20,20,20,20,20,20,20,20,20,20,20,20,61,20,20,20,61,20,61,20,61,20,61,20,198",1);
 				result = rcFastMatched.toString();
 				Log.d(TAG, " getFastMatched result:" +result);
+				break;
+			case R.id.learnUpload:
+				IRMessage msg = irInterface.learnUpload(1101, 7, "testBeModel","testRcmodel","1,38000,167,167,20,61,20,20,20,61,20,61,20,20,20,20,20,61,20,20,20,20,20,61,20,20,20,20,20,61,20,61,20,20,20,61,20,61,20,20,20,61,20,61,20,61,20,61,20,61,20,61,20,20,20,61,20,20,20,20,20,20,20,20,20,20,20,20,20,61,20,61,20,20,20,61,20,20,20,20,20,20,20,20,20,20,20,20,20,61,20,20,20,61,20,61,20,61,20,61,20,198,167,167,20,61,20,20,20,61,20,61,20,20,20,20,20,61,20,20,20,20,20,61,20,20,20,20,20,61,20,61,20,20,20,61,20,61,20,20,20,61,20,61,20,61,20,61,20,61,20,61,20,20,20,61,20,20,20,20,20,20,20,20,20,20,20,20,20,61,20,61,20,20,20,61,20,20,20,20,20,20,20,20,20,20,20,20,20,61,20,20,20,61,20,61,20,61,20,61,20,198");
+				result = msg.toString();
+				Log.d(TAG, " learnUpload result:" +result);
 				break;
 			default:
 				break;

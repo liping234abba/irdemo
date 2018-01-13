@@ -10,4 +10,6 @@
 	<string name="getDataByBrand">getDataByBrand</string>
 	<string name="getDetailByRCID">getDetailByRCID</string>
 	<string name="getFastMatched">getFastMatched</string>
+	<string name="getOrderMatched">getOrderMatched</string>
+	<string name="learnUpload">learnUpload</string>
 </resources>
