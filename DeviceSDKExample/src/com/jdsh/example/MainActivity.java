@@ -38,11 +38,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
 	
 	private TextView showText ;
 	
-	private String appID = "12720171028150837";
+	private String appID = "apidemo";
 	
 	private String deviceId = "test_device";
 	
-	private String url = "https://api.jdsh168.com/open/m.php";
+	private String url = "http://api.jdshtech.com/open/m.php";
 	
 	private List<DeviceType> deviceType = new ArrayList<DeviceType>() ;//设备类型
 	
