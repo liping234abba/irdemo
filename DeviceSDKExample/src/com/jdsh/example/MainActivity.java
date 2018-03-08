@@ -42,7 +42,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 	
 	private String deviceId = "test_device";
 	
-	private String url = "http://api.jdshtech.com/open/m.php";
+	private String url = "https://api.jdshtech.com/open/m.php";
 	
 	private List<DeviceType> deviceType = new ArrayList<DeviceType>() ;//设备类型
 	
